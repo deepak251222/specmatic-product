@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "e324167a-f226-4aad-a807-c7d18082cbe6",
+		"name": "specmatic",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24219652",
+		"_collection_link": "https://crimson-firefly-661061.postman.co/workspace/My-Workspace~735dbd8c-d204-4f50-8215-e3c728bcc634/collection/24219652-e324167a-f226-4aad-a807-c7d18082cbe6?action=share&source=collection_link&creator=24219652"
+	},
+	"item": [
+		{
+			"name": "get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/products?type=GADGET",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "GADGET"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"name\": \"XYZ Phone\",\r\n  \"type\": \"GADGET\",\r\n  \"inventory\": 2\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/products",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
